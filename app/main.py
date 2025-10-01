@@ -13,3 +13,7 @@ app.include_router(catequizando.router, prefix="/catequizando", tags=["Catequiza
 @app.get("/")
 def read_root():
     return {"message": "Hello FastAPI with Docker!"}
+
+@app.get("/home")
+def read_root():
+    return {"message": "HOME"}
